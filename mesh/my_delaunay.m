@@ -1,5 +1,7 @@
 function t = my_delaunay(p)
 
+% Ref: http://paulbourke.net/papers/triangulate/ (see Sect. Algorithm)
+
 % determine the supertriangle
 xmin = min(p(:,1)); xmax = max(p(:,1));
 ymin = min(p(:,2)); ymax = max(p(:,2));
